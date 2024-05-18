@@ -7,7 +7,7 @@ const Checkbox = ({ label }: { label: string }) => {
         <label
             style={{
                 padding: '1rem',
-                border: value ? '2px solid #8D2' : '2px solid #F70'
+                border: value ? '2px solid #8B008B	' : '2px solid #CD853F'
             }}
         >
             <input
