@@ -1,13 +1,13 @@
 import React from "react"
 
-type ButtonProps = React.ComponentProps<'button'> & {
-    tamanho?:string;
-}
+type ButtonProps = {
+    incrementar: React.Dispatch<React.SetStateAction<number>>
+};
 
-const Button = ({children, tamanho, ...props}: ButtonProps) => {
+const Button = ({incrementar}: ButtonProps) => {
     return (
-        <button style={{fontSize: tamanho}} {...props}>
-            {children}
+        <button onClick={() => incrementar((total) => total + 1)}>
+            Incrementar
         </button>
     );
 }
